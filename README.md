@@ -7,7 +7,10 @@
 I kicked things off with VDM-SL in `RobotMonitor.rtf`, sketching out the robot’s world: its position (row and column), last move, and rules like staying within the grid and only resetting from the exit point `(6,6)`. I set up test cases in `TestRM.rtf`—like checking if the robot’s at `(6,6)` before exiting—and ran them in VDMTools to make sure the design held up.
 
 Next, I turned that model into a working program using Java and JavaFX. The Java files handle the logic: one class defines the robot’s state and movements, another manages custom exceptions inspired by VDM’s precision, and others tie it all together. JavaFX steps in to give it a visual twist—a simple GUI where you can see the robot move on the grid and click to control it, alongside a text-based version for console fans.
+## Screenshot
+Here’s what the JavaFX GUI looks like in action:
 
+![RobotMonitor GUI](ROBOTSCREENSHOT.png)
 ## What’s Inside?
 - **`RobotMonitor.rtf`**: The VDM-SL blueprint of the robot’s behavior.
 - **`TestRM.rtf`**: Test scenarios to prove the model works.
